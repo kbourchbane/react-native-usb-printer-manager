@@ -1,43 +1,43 @@
-package com.usbprintermanager
+package com.usbprintermanager;
 
-import com.facebook.react.bridge.ReactApplicationContext
-import com.facebook.react.bridge.ReactContextBaseJavaModule
-import com.facebook.react.bridge.ReactMethod
-import com.facebook.react.bridge.Promise
-import android.hardware.usb.UsbManager
-import java.util.HashMap
-import java.util.Map
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.Promise;
+import android.hardware.usb.UsbManager;
+import java.util.HashMap;
+import java.util.Map;
 
-import java.lang.String
+import java.lang.String;
 
-import java.lang.Number
+import java.lang.Number;
 
-import java.lang.Boolean
+import java.lang.Boolean;
 
-import org.json.JSONArray
+import org.json.JSONArray;
 
-import org.json.JSONException
-import java.util.Map
+import org.json.JSONException;
+import java.util.Map;
 
-import java.lang.String
+import java.lang.String;
 
-import java.lang.Number
+import java.lang.Number;
 
-import java.lang.Boolean
+import java.lang.Boolean;
 
-import org.json.JSONObject
+import org.json.JSONObject;
 
-import org.json.JSONException
-import org.json.JSONArray
+import org.json.JSONException;
+import org.json.JSONArray;
 
-import org.json.JSONObject
+import org.json.JSONObject;
 
-import org.json.JSONException
+import org.json.JSONException;
 
 public class ReactNativeUsbModule extends ReactContextBaseJavaModule {
   public ReactNativeUsbModule(ReactApplicationContext reactContext) {
     super(reactContext);
-    this.reactContext = reactContext;
+    //this.reactContext = reactContext;
   }
 
   @Override
@@ -46,8 +46,8 @@ public class ReactNativeUsbModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  fun multiply(Double a, Double b, Promise promise) {
-    promise.resolve(a * b)
+  public void multiply(Double a, Double b, Promise promise) {
+    promise.resolve(a * b);
   }
 
   @ReactMethod
